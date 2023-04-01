@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap');
+
+:root{
+    --color-fondo: #1f1f1f;
+    --color-tarjeta: #474747;
+    --color-contenedor: #d4d4d4;
+    --color-seleccionar: #5979e2;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: 'Roboto', sans-serif;
+}
+
+h2{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    color: white;
+}
+
+.contenedorTarjetas{
+    width: 80%;
+    height: max-content;
+    padding: 15px;
+    background-color: var(--color-contenedor);
+    min-height: 40svh;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat( 3, minmax(250px, 350px) );
+    gap: 3%;
+}
+
+.tarjeta{
+    max-width: 400px;
+    background-color: var(--color-tarjeta);
+    border-radius: 20px;
+    color: white;
+    transition: .2s;
+}
+
+.tarjeta:hover{
+    background-color: var(--color-seleccionar);
+    cursor: pointer;
+}
+
+.tarjeta>.descripcion{
+    padding: 5px 25px;
+}
+
+.tarjeta>.img>img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}

@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+#menu{
+    position: relative;
+    width: 200px;
+    background-color: cadetblue;
+    transition: .2s;
+}
+
+.oculto{
+    transform: translateX(-200px);
+}
