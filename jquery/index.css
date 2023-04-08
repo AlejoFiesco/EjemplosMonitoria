@@ -1,0 +1,21 @@
+#tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.tarjeta{
+    width: 350px;
+    padding: 15px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.tarjeta>h2{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.rojo{
+    border: 1px solid red;
+}

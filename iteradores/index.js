@@ -9,7 +9,6 @@ let tarjeta = `
     </div>
 </div>
 `
-
 let arregloTarjetas = [tarjeta, tarjeta, tarjeta, tarjeta]
 let contenedor = document.getElementById("contenedor")
 let contenedorGrid = document.getElementById("contenedorGrid")
