@@ -20,17 +20,19 @@ for (let i = 0; i < 5; i++) {
 //Se filtra por id
 const nuevoArreglo = arreglo.filter((card) => card.id > 1);
 
-/*for (key in nuevoArreglo[0]) {
-    console.log(`${key}`);
-}*/
+for (key in nuevoArreglo[0]) {
+    //console.log(`${key}`);
+}
 
-/*nuevoArreglo.map((card) => {
+nuevoArreglo.map((card) => {
     $('#tarjetas').append(card['html']);
-})*/
+})
 
-
-$('.tarjeta').click((e)=>{
-    e.target.classList.toggle('rojo')
+/* Para utilizar el selector $(this) no se pueden utilizar
+funciones anónimas, es necesario usar function(){}
+Funciones anónimas ()=>{} */
+$('.tarjeta').click(function(){
+    $(this).toggleClass('rojo');
 })
 
 $('#sumar').click(()=>{
