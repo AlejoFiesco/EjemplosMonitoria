@@ -1,0 +1,15 @@
+[{
+    "nombre": "Alejandro",
+    "notas": [30, 40, 15, 34]
+},
+{
+    "nombre": "Jeisson",
+    "notas": [20, 10, 25, 44]
+},
+{
+    "nombre": "Carlos",
+    "notas": [30, 20, 15, 34]
+},{
+    "nombre": "Luisa",
+    "notas": [30, 40, 11, 34]
+}]
