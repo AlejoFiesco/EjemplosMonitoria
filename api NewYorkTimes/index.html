@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <select name="filtro" id="filtro">
-        
+
     </select>
 
     <div id="resultados">
-        
+
     </div>
+    <!-- 
+        Cualquier variable declarada fuera de una función se 
+        toma como una variable global a partir de donde se llame el archivo
+        que la contiene
+
+        El script logica tiene todos los filtros y demás funciones
+        exclusivamente lógicas
+
+        El script index se encarga de consumir el API y ejecutar 
+        eventos y renderizar los resultados
+    -->
+    <script src="./logica.js"></script>
+    <script src="./renders.js"></script>
     <script src="./index.js"></script>
 </body>
+
 </html>
