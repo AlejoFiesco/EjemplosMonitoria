@@ -1,6 +1,5 @@
 let url = "https://plataforma.visasgomezyasociados.com/API/cityList";
 
-
 function render(data){
     console.log("render")
     $("#resultado").html("");
@@ -11,14 +10,14 @@ function render(data){
 }
 
 function consumirAPI() {  
-    $('#cargando').html("Cargando")   
+    $('#cargando').html("Cargando");
+    $('#resultado').html("");  
     $.ajax({
         type: "GET",
         url: url,
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (data) {
-            $('#cargando').html('finalizado')
             render(data);
         },
         failure: function (data) {
@@ -26,6 +25,9 @@ function consumirAPI() {
         },  
         error: function (data) {
             $('#resultado').html(data.responseText);
+        },
+        complete: function (data){
+            $('#cargando').html('finalizado')
         }
     });
 }
