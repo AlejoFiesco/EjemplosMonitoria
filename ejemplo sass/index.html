@@ -1,38 +1,49 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Bootstrap Sass &amp; JS</title>
-  </head>
-  <body>
 
-    <div class="contenedor">
-      <div class="estudiante">
-        <h3>Nombre</h3>
-        <ul>
-          <li>30</li>
-          <li>30</li>
-          <li>30</li>
-        </ul>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Bootstrap Sass &amp; JS</title>
+</head>
 
-      <div class="estudiante">
-        <h3>Nombre</h3>
-        <ul>
-          <li>30</li>
-          <li>30</li>
-          <li>30</li>
-        </ul>
+<body>
+  <div class="contenedorCarrusel">
+    <div id="carouselExample" class="carousel slide carrusel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="img">
+            <img src="https://cdn.shopify.com/s/files/1/0532/7139/6534/products/asprire-argentine-silver-3_1200x1200.jpg?v=1675159508" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img">
+            <img src="https://www.todomountainbike.net/images/articles/2019/poc-aspire-solar-switch.jpg" alt="...">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="img">
+            <img src="https://cdn.shopify.com/s/files/1/0532/7139/6534/products/oc-Poc-crave-hydro-wht-gry-19_hr_450x450.jpg?v=1612469886" alt="...">
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-      
-    <script type="module" src="js/main.js"></script>
-    <script>
-      import data from './estudiantes.json' assert { type: 'JSON' };
-      console.log(data);
-    </script>
-  </body>
+    <div class="descripcion">
+      <h4>Titulo</h4>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt optio magnam enim, reiciendis eveniet perferendis. Labore cupiditate odio adipisci magni eum quo unde, hic numquam impedit tempora earum ipsa ea!</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+
 </html>

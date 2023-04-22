@@ -1,0 +1,23 @@
+.contenedorCarrusel {
+    display: flex;
+
+    .carrusel {
+        width: 60%;
+        height: 450px;
+
+        .img {
+            display: flex;
+            justify-content: center;
+
+            img {
+                max-height: 450px;
+                object-fit: contain;
+            }
+        }
+
+    }
+
+    .descripcion {
+        width: 40%;
+    }
+}
