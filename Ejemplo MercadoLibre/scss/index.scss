@@ -1,0 +1,103 @@
+.busqueda{
+    display: flex;
+    justify-content: center;
+
+    .formulario{
+        width: 40%;
+    }
+}
+
+.contenedorCarrusel{
+    display: flex;
+
+    .carrusel{
+        width: 100%;
+        height: 450px;
+
+        .img{
+            display: flex;
+            justify-content: center;
+
+            img{
+                max-height: 450px;
+            }
+        }
+    }
+}
+
+.pagos{
+    height: 80px;
+    margin: 40px auto;
+    border-radius: 5px;
+
+    i{
+        font-size: 2rem;
+        color: cornflowerblue;
+    }
+
+    .fila{
+        height: 100%;
+        align-content: center; 
+        
+        &>.col{
+            height: 50%;
+        }
+    }
+
+    .columna{
+        display: flex;
+        flex-direction: column;
+
+        a{
+            color: blue;
+        }
+    }
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+
+    .img{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-content: center;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .tarjeta{
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+
+        .etiqueta{
+            width: fit-content;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .fondoNaranja{
+            background-color: orangered;
+            color: white;
+        }
+
+        .fondoVerde{
+            background-color: rgb(129, 238, 129);
+            color: green;
+        }
+
+        .precio{
+            &::before{
+                content: '$';
+            }
+        }
+    }
+}

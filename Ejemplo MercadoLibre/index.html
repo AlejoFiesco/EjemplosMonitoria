@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Bootstrap Sass &amp; JS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="busqueda bg-secondary">
+        <form class="formulario" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mercado Libre</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorías
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                            <li><a class="dropdown-item" href="#">Hogar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Historial</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 alinearDerecha">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                            <li><a class="dropdown-item" href="#">Hogar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Mis compras</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Favoritos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tecnología</a></li>
+                            <li><a class="dropdown-item" href="#">Hogar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Electrodomésticos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrusel -->
+    <div class="contenedorCarrusel">
+        <div id="carouselExampleIndicators" class="carousel slide carrusel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img">
+                        <img src="./img/images.jpeg" class="d-block w-100" alt="./img/images.jpeg">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img">
+                        <img src="./img/images.jpeg" class="d-block w-100" alt="./img/images.jpeg">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img">
+                        <img src="./img/images.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Tarjeta pagos-->
+    <div class="container text-center bg-primary pagos">
+        <div class="row fila">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <i class="bi bi-card-checklist"></i>
+                    </div>
+                    <div class="col-9 columna">
+                        Hasta 48 cuotas
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col columna">
+                <div class="row">
+                    <div class="col">
+                        <i class="bi bi-bank"></i>
+                    </div>
+                    <div class="col-9 columna">
+                        Transferencia
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col columna">
+                Pago en efectivo
+                <a href="">Ver más</a>
+            </div>
+            <div class="col columna">
+                Más medios de pago
+                <a href="">Ver más</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="productos">
+        <div class="container tarjeta bg-primary">
+            <div class="row">
+                <div class="col-2">
+                    <div class="img">
+                        <img src="./img/images.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="etiqueta fondoNaranja">
+                            Más vendido
+                        </div>
+                    </div>
+                    <div class="row">
+                        Laptop gamer Asus TUF Gaming FX506LH negra 15.6", Intel Core i5 10300H 8GB de RAM 512GB SSD,
+                        NVIDIA GeForce GTX 1650 144 Hz
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <h5 class="precio">3800000</h5>
+                            </div>
+                            <div class="row">
+                                en x36
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                5/5
+                            </div>
+                            <div class="row">
+                                Disponible en dos colores
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="etiqueta fondoVerde">Envío gratis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container tarjeta bg-primary">
+            <div class="row">
+                <div class="col-2">
+                    <div class="img">
+                        <img src="./img/images.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="etiqueta fondoNaranja">
+                            Más vendido
+                        </div>
+                    </div>
+                    <div class="row">
+                        Laptop gamer Asus TUF Gaming FX506LH negra 15.6", Intel Core i5 10300H 8GB de RAM 512GB SSD,
+                        NVIDIA GeForce GTX 1650 144 Hz
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <h5 class="precio">3800000</h5>
+                            </div>
+                            <div class="row">
+                                en x36
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                5/5
+                            </div>
+                            <div class="row">
+                                Disponible en dos colores
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="etiqueta fondoVerde">Envío gratis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
