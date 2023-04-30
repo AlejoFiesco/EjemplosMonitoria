@@ -1,3 +1,4 @@
+
 .busqueda{
     display: flex;
     justify-content: center;
@@ -19,6 +20,7 @@
             justify-content: center;
 
             img{
+                object-fit: contain;
                 max-height: 450px;
             }
         }

@@ -1,0 +1,17 @@
+.carrusel{
+    width: 60%;
+    height: 400px;
+    border: 2px solid red;
+}
+
+.carrusel .img{
+    height: 400px;
+    display: grid;
+    place-content: center;
+    background-color: #05b7fd;
+}
+
+.carrusel .img img{
+    width: auto;
+    max-height: 400px;
+}
