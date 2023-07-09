@@ -1,6 +1,7 @@
 $(document).ready(()=>{
     let url = "https://api.nytimes.com/svc/mostpopular/v2/viewed/30.json?api-key=EFYQrppYzp7ZEcFkiHIGbh6CSKMfc8Il"
-
+    // const ENDPOINT = 'http://localhost:8000/';
+    // let localUrl = ENDPOINT+"manage/products/"
     $.ajax({
         method: 'GET',
         url: url,
@@ -9,6 +10,7 @@ $(document).ready(()=>{
         //Cuando se obtienen los resultados exitosas
         success: function (data){
             articulos = data.results;
+            console.table(articulos)
             let subsecciones = buscarSubsecciones(data.results);
             mostrarOpciones(subsecciones)
         }
